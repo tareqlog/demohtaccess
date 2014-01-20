@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteRule ^accueil$ index.php
+RewriteRule ^accueil/$ index.php
+
+RewriteRule ^([a-z]+)/$ statique/$1.html
+RewriteRule ^([a-z]+)/([0-9]+)/$ catalogue.php?$1=$2
+
